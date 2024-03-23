@@ -32,7 +32,7 @@
         }
 
         .btn {
-            margin: 15px 10px;
+            margin: 15px 15px;
             cursor: pointer;
             font-size: 20px;
             border: solid black 1px;
@@ -48,6 +48,10 @@
             text-align: center;
             font-size: 40px;
         }
+
+
+
+        
     </style>
 </head>
 
@@ -57,7 +61,7 @@
 
     <div class="card">
 
-        <img class="e-img" src="happiness.png" alt="happe-emojy" id="s-toggler">
+        <img class="e-img" src="happy.png" alt="happe-emojy" id="s-toggler">
         <div class="btn-cont">
             <button class="btn" id="prev" onclick="happy()">Happy</button>
             <button class="btn" id="next" onclick="party()">Party</button>
@@ -67,23 +71,29 @@
 
 
     <script>
+
         function happy() {
 
             const p = document.getElementById("s-toggler");
+            p.src = "happy.png";
 
         }
 
         function party() {
 
-            const nextElement = document.getElementById('s-toggler');
+            const p = document.getElementById('s-toggler');
+            p.src = "party.png";
 
         }
 
-        function party() {
+        function wow() {
 
-            const nextElement = document.getElementById('s-toggler');
+            const p = document.getElementById('s-toggler');
+            p.src = "wow.png";
 
         }
+
+
     </script>
 
 
