@@ -32,15 +32,23 @@
         }
 
         .btn {
-            margin: 15px 15px;
+            width: 90px;
+            margin: 15px;
             cursor: pointer;
             font-size: 20px;
             border: solid black 1px;
             font-weight: bold;
             border-radius: 50px;
-            padding: 2px 15px;
+            padding: 2px;
             background-color: #36b59e;
             background-image: linear-gradient(90deg, #36b59e 0%, #6174c6 100%);
+
+        }
+
+        .btn:hover {
+            box-shadow: black 2px 2px 8px;
+            transform: translateY(-4px);
+            
 
         }
 
@@ -50,8 +58,20 @@
         }
 
 
+        @media screen and (max-width: 600px) {
 
-        
+            .card {
+                width: 80%;
+            }
+
+            .btn {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
     </style>
 </head>
 
